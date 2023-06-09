@@ -1,0 +1,15 @@
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\bin\Debug\net6.0\Exercicio2-01.exe
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\bin\Debug\net6.0\Exercicio2-01.deps.json
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\bin\Debug\net6.0\Exercicio2-01.runtimeconfig.json
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\bin\Debug\net6.0\Exercicio2-01.dll
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\bin\Debug\net6.0\Exercicio2-01.pdb
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.csproj.AssemblyReference.cache
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.AssemblyInfoInputs.cache
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.AssemblyInfo.cs
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.csproj.CoreCompileInputs.cache
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.dll
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\refint\Exercicio2-01.dll
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.pdb
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\Exercicio2-01.genruntimeconfig.cache
+C:\Users\joann\Desktop\Workspace\Atos\Inicial\ExerciciosOO\OO\ExerciciosOO\Exercicio2-01\obj\Debug\net6.0\ref\Exercicio2-01.dll
