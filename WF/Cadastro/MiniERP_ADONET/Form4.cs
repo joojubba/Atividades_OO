@@ -20,60 +20,56 @@ namespace MiniERP_ADONET
 
         private void buttonLancarNota_Click(object sender, EventArgs e)
         {
-            // Criar uma nova nota
-            n.IdCliente = int.Parse(textBoxIDNotaCliente.Text);
-            n.NotaItens = new List<NotaItem>();
+            n.IdCliente = Convert.ToInt32(textBoxIDNotaCliente.Text);
 
-            // Adicionar os itens da nota
-            foreach (DataGridViewRow row in dataGridViewNota.Rows)
-            {
-                if (!row.IsNewRow)
-                {
-                    NotaItem ni = new NotaItem();
-                    ni.IdProduto = Convert.ToInt32(row.Cells["IdProduto"].Value);
-                    ni.QtdNotaItem = Convert.ToInt32(row.Cells["QtdNotaItem"].Value);
-                    n.NotaItens.Add(ni);
-                }
-            }
+
+            NotaItem notaItem = new NotaItem();
+
+            notaItem.IdProduto = Convert.ToInt32(textBoxIDNota.Text);
+            notaItem.QtdNotaItem = Convert.ToInt32(textBoxNotaQtd.Text);
+
+
+            n.NotaItens.Add(notaItem);
+
             if (n.gravar())
             {
-                MessageBox.Show("Nota lançada com sucesso!");
+                MessageBox.Show("Nota lançada!");
             }
             else
             {
-                MessageBox.Show("Erro ao lançar a nota.");
+                MessageBox.Show("Erro ao lançar nota!");
             }
         }
 
         private void buttonConsultarNota_Click(object sender, EventArgs e)
         {
 
+            Nota n = new Nota();
 
-
-            // Obter o ID da nota digitado pelo usuário
-            int idNota = Convert.ToInt32(textBoxIDNota.Text);
-
-            // Consultar a nota pelo ID
-            Nota n = new Nota().consulta(idNota);
-
+            n = n.consulta(Convert.ToInt32(textBoxIDNota.Text));
             if (n != null)
             {
-                // Exibir os detalhes da nota
-                textBoxIDNotaCliente.Text = n.IdCliente.ToString();
 
-                // Exibir os itens da nota
-                dataGridViewNota.Rows.Clear();
-                foreach (var notaItem in n.NotaItens)
+                DataTable dt = new DataTable();
+                dt.Columns.Add("IdNotaItem");
+                dt.Columns.Add("IdProduto");
+                dt.Columns.Add("QtdNotaItem");
+
+                foreach (var item in n.NotaItens)
                 {
-                    int rowIndex = dataGridViewNota.Rows.Add();
-                    dataGridViewNota.Rows[rowIndex].Cells["IdProduto"].Value = notaItem.IdProduto;
-                    dataGridViewNota.Rows[rowIndex].Cells["QtdNotaItem"].Value = notaItem.QtdNotaItem;
+                    dt.Rows.Add(item.IdNotaItem, item.IdProduto, item.QtdNotaItem);
                 }
+                dataGridViewNota.DataSource = dt;
             }
             else
             {
-                MessageBox.Show("Nota não encontrada.");
+                MessageBox.Show("Nota não encontrada!");
             }
+        }
+
+        private void dataGridViewNota_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

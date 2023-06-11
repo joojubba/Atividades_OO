@@ -33,7 +33,6 @@
             buttonConsultarNota = new Button();
             labelDNotaCliente = new Label();
             textBoxIDNotaCliente = new TextBox();
-            textBoxNota = new TextBox();
             labelIDNota = new Label();
             textBoxIDNota = new TextBox();
             labelNotaQtd = new Label();
@@ -87,14 +86,6 @@
             textBoxIDNotaCliente.Size = new Size(100, 23);
             textBoxIDNotaCliente.TabIndex = 10;
             // 
-            // textBoxNota
-            // 
-            textBoxNota.Location = new Point(295, 12);
-            textBoxNota.Multiline = true;
-            textBoxNota.Name = "textBoxNota";
-            textBoxNota.Size = new Size(290, 125);
-            textBoxNota.TabIndex = 14;
-            // 
             // labelIDNota
             // 
             labelIDNota.AutoSize = true;
@@ -130,11 +121,12 @@
             // dataGridViewNota
             // 
             dataGridViewNota.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewNota.Location = new Point(295, 154);
+            dataGridViewNota.Location = new Point(303, 49);
             dataGridViewNota.Name = "dataGridViewNota";
             dataGridViewNota.RowTemplate.Height = 25;
             dataGridViewNota.Size = new Size(438, 150);
             dataGridViewNota.TabIndex = 19;
+            dataGridViewNota.CellContentClick += dataGridViewNota_CellContentClick;
             // 
             // Form4
             // 
@@ -146,7 +138,6 @@
             Controls.Add(labelNotaQtd);
             Controls.Add(textBoxIDNota);
             Controls.Add(labelIDNota);
-            Controls.Add(textBoxNota);
             Controls.Add(textBoxIDNotaCliente);
             Controls.Add(labelDNotaCliente);
             Controls.Add(buttonConsultarNota);
@@ -165,7 +156,6 @@
         private Button buttonConsultarNota;
         private Label labelDNotaCliente;
         private TextBox textBoxIDNotaCliente;
-        private TextBox textBoxNota;
         private Label labelIDNota;
         private TextBox textBoxIDNota;
         private Label labelNotaQtd;

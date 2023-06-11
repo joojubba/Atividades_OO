@@ -31,7 +31,7 @@ namespace MiniERP_ADONET
             command.Transaction = tran;
             command.CommandType = System.Data.CommandType.Text;
 
-            command.CommandText = "insert into notas (fk_cliente) values (@fk_cliente);";
+            command.CommandText = "insert into notas (fk_cliente) values (@fk_cliente); SELECT SCOPE_IDENTITY();";
             command.Parameters.Add("@fk_cliente", System.Data.SqlDbType.VarChar);
             command.Parameters[0].Value = IdCliente;
 
@@ -51,6 +51,7 @@ namespace MiniERP_ADONET
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 tran.Rollback();
                 return false;
             }
